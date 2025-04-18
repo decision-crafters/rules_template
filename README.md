@@ -484,6 +484,18 @@ This structure ensures that different aspects of the project, such as code, test
 
 By adhering to the principles and structure outlined in this Rules Template, development teams can leverage AI coding assistants more effectively, ensuring consistency, quality, and maintainability across their projects.
 
+## Specialized Use Case Prompts
+
+The [prompts directory](./prompts) contains specialized prompts for different use cases:
+
+- [DevOps Initialization](./prompts/devops_initialization.md) - Initialize the rules_template for DevOps-focused projects
+- [Machine Learning Project Initialization](./prompts/ml_project_initialization.md) - Set up rules_template for ML and data science projects
+- [Web Application Initialization](./prompts/web_app_initialization.md) - Configure rules_template for web app development
+- [Mobile App Development Initialization](./prompts/mobile_app_initialization.md) - Adapt rules_template for mobile app projects
+- [Data Engineering Initialization](./prompts/data_engineering_initialization.md) - Apply rules_template to data pipeline projects
+
+See the [Prompts Guide](./prompts/README.md) for information on how to add more specialized prompts
+
 ## To-Do:
 - [ ] 1: ignore files unified system to save tokens.
 - [ ] 2: example content of each file
