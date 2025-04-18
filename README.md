@@ -493,6 +493,7 @@ The [prompts directory](./prompts) contains specialized prompts for different us
 - [Web Application Initialization](./prompts/web_app_initialization.md) - Configure rules_template for web app development
 - [Mobile App Development Initialization](./prompts/mobile_app_initialization.md) - Adapt rules_template for mobile app projects
 - [Data Engineering Initialization](./prompts/data_engineering_initialization.md) - Apply rules_template to data pipeline projects
+- [GitHub Pages Initialization](./prompts/github_pages_initialization.md) - Configure rules_template with GitHub Pages for documentation
 
 See the [Prompts Guide](./prompts/README.md) for information on how to add more specialized prompts
 

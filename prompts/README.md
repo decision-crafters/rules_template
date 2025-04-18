@@ -9,6 +9,7 @@ This directory contains specialized prompts that can be used with AI assistants 
 3. [Web Application Initialization](./web_app_initialization.md) - Configures rules_template for web app development (frontend and backend)
 4. [Mobile App Development Initialization](./mobile_app_initialization.md) - Adapts rules_template for mobile app projects (native and cross-platform)
 5. [Data Engineering Initialization](./data_engineering_initialization.md) - Applies rules_template to data pipeline and ETL/ELT projects
+6. [GitHub Pages Initialization](./github_pages_initialization.md) - Configures rules_template with GitHub Pages for documentation
 
 ## How to Add a New Prompt
 
