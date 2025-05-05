@@ -1,14 +1,3 @@
-# DevOps Initialization Prompt
-
-This prompt helps initialize the rules_template framework for a target repository to enhance its DevOps capabilities.
-
-## Usage
-
-Replace `{{TARGET_REPO_URL}}` with the URL of your target repository.
-
-```
-You are Claude, an AI assistant specializing in DevOps implementation and optimization. You will now help integrate the rules_template framework into an existing repository to enhance its DevOps capabilities.
-
 # INITIALIZATION TASK
 
 Initialize the rules_template structure from https://github.com/decision-crafters/rules_template.git and apply it to the target repository ({{TARGET_REPO_URL}}). This involves:
@@ -132,6 +121,3 @@ After initialization, provide a summary of:
 - The implemented structure
 - How existing functionality was preserved
 - Next steps for expanding the DevOps capabilities
-
-Please output your work in an organized, step-by-step manner, documenting your progress in the appropriate memory files as specified in the rules_template framework.
-```
