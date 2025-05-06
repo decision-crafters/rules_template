@@ -98,17 +98,43 @@ kanbn chat --message "I am ready to work on project-bootstrap. The goal for me i
 ## When using windsur, Cursor, github Copilot or Cline use this 
 ```
 cat >chat-with-kanban.sh<<EOF
-chat-with-kanban.sh
+# This script facilitates interaction with the Kanban chat feature using the Kanbn CLI tool.
+# It sends a message to the chat and saves the response to a temporary file for further review.
+#
+# Usage:
+#   ./chat-with-kanban.sh "Your message here"
+#
+# Arguments:
+#   MESSAGE - The message to send to the Kanban chat.
+#
+# Environment Variables:
+#   OPENROUTER_API_KEY - Your API key for accessing the OpenRouter service. Replace "your_api_key_here" with your actual API key.
+#   OPENROUTER_MODEL   - Specifies the model to use for the chat. The default is "google/gemma-3-4b-it:free".
+#   DEBUG              - Enables or disables debug mode. Set to "true" for verbose output, "false" otherwise.
+#
+# Workflow:
+# 1. The script takes a single argument, MESSAGE, which is the message to send to the Kanban chat.
+# 2. It sets the required environment variables for the Kanbn CLI tool to function properly.
+# 3. The `kanbn chat` command is executed with the provided message.
+# 4. The output of the `kanbn chat` command is saved to a temporary file located at /tmp/_please_read_this_file.md.
+#    This allows the user to review the chat response later.
+#
+# Notes:
+# - Ensure that the Kanbn CLI tool is installed and properly configured on your system.
+# - Replace "your_api_key_here" with a valid OpenRouter API key before running the script.
+# - The temporary file /tmp/_please_read_this_file.md will be overwritten each time the script is executed.
+# - Use the DEBUG environment variable to enable or disable debug output as needed.
 #!/bin/bash
 
-IDE_NAME=cursor
-MESSAGE="${IDE_NAME} please change my content"
+MESSAGE="${1}"
 
 export OPENROUTER_API_KEY=your_api_key_here
 export OPENROUTER_MODEL=google/gemma-3-4b-it:free
 export DEBUG=false
 
-kanbn chat --message "$MESSAGE" | tee /tmp/${IDE_NAME}_please_read_this_file.md
+kanbn chat --message "${MESSAGE}" | tee /tmp/_please_read_this_file.md
+
+
 
 EOF
 ```
